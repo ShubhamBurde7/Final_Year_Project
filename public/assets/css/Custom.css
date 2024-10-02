@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 body {
   min-width: 800px;
@@ -152,6 +153,118 @@ img {
   color: #fff;
   padding: 20px;
 } */
+
+/* Footer Section - Shubham Burde */
+
+.footer {
+  background-color: #6466eb;
+  color: #fff;
+
+}
+
+.footer-container {
+  max-width: 1170px;
+  /* background-color: red; */
+  margin: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-col {
+  width: 33%;
+  padding: 0 15px;
+}
+
+.footer-col ul {
+  padding-left: 5px;
+}
+.footer-col h4 {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  position: relative;
+  line-height: 1.5;
+}
+
+.footer-col h4::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #ddcfd4;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li {
+  font-size: 16px;
+  text-transform: capitalize;
+  /* color: #ffffff; */
+  text-decoration: none;
+  font-weight: 350;
+  color: #e7e4e4;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul li:hover {
+  color: #ffffff;
+  padding-left: 6px;
+}
+
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255,255,255,0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+} 
+
+.footer-col .social-links a:hover {
+  color: #24262b;
+  background-color: #ffffff;
+}
+
+
+/* Responsive */
+@media(max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 0 30px;
+
+  }
+}
+@media(max-width: 574px) {
+  .footer-col {
+    width: 100%;
+    /* margin-bottom: 0 30px; */
+
+  }
+}
+
+
+
+/* End Footer Section  */
 
 .content {
   width: 24%;
@@ -433,6 +546,46 @@ input[type="submit"] {
   border: none
 }
 
+/* Video Section */
+
+section {
+  display: flex; /* Use Flexbox for layout */
+  justify-content: center; /* Center all content horizontally */
+  align-items: center; /* Center items vertically if needed */
+  padding: 20px; /* Add padding around the section */
+  background-color: #f9f9f9; /* Optional: Set a background color */
+}
+
+.video-scroll-container {
+  display: flex; /* Use flex for horizontal layout */
+  gap: 20px; /* Space between video iframes */
+}
+
+iframe {
+  border-radius: 10px; /* Round corners of the iframes */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+  height: 315px; /* Fixed height for the iframe */
+  width: 460px; /* Fixed width for the iframe */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+iframe:hover {
+  transform: scale(1.05); /* Slightly scale up the iframe on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  iframe {
+    width: 100%; /* Full width on smaller screens */
+    height: auto; /* Adjust height automatically */
+  }
+}
+
+
+/* End Video Section */
+
+
 .gallery {
   position: relative;
 }
@@ -571,3 +724,5 @@ tr:hover {
 .certificates-card a {
   color: black; /* Ensure links are readable on the card */
 }
+
+
